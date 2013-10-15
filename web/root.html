@@ -1,6 +1,7 @@
+<!doctype html>
 <html>
 	<head><!-- CDN hosted by Cachefly -->
-		<script src="../tinymce/js/tinymce/tinymce.min.js"></script>
+		<script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
 		<script language="javascript">
 			function getContent() {
 				
@@ -12,19 +13,17 @@
 				tinyMCE.activeEditor.setContent(content);
 			}
 		</script>
-		<script>
-			tinymce.init({
-						 selector:'textarea',
-						 skin: "light",
-						 resize: false,
-						 toolbar1: "bold italic underline | fontsizeselect",
-						 toolbar2: "bullist numlist",
-						 toolbar3: "anchor | forecolor backcolor",
-						 menubar : false
-			});
-			</script>
+		<script type="text/javascript">
+		tinymce.init({
+			selector:'textarea',
+			plugins:"link, textcolor",
+			resize: false,
+			toolbar: "bold italic underline forecolor background fontsizeselect bullist numlist link",
+			menubar : false
+		 });
+</script>
 	</head>
 	<body>
         <textarea>Your content here.</textarea>
-	</body>
+    </body>
 </html>
