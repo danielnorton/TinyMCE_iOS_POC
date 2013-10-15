@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B5FE94C180DBCAF00A45A5A /* BRTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5FE94B180DBCAF00A45A5A /* BRTextViewController.m */; };
 		9BBFA941180C7BB7004F510F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBFA940180C7BB7004F510F /* Foundation.framework */; };
 		9BBFA943180C7BB7004F510F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBFA942180C7BB7004F510F /* CoreGraphics.framework */; };
 		9BBFA945180C7BB7004F510F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBFA944180C7BB7004F510F /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		9BBFA962180C7BB7004F510F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBFA944180C7BB7004F510F /* UIKit.framework */; };
 		9BBFA96A180C7BB7004F510F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFA968180C7BB7004F510F /* InfoPlist.strings */; };
 		9BBFA96C180C7BB7004F510F /* TinyMceOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBFA96B180C7BB7004F510F /* TinyMceOneTests.m */; };
+		9BBFA97B180C97B2004F510F /* content.html in Resources */ = {isa = PBXBuildFile; fileRef = 9BBFA97A180C97B2004F510F /* content.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B5FE94A180DBCAF00A45A5A /* BRTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRTextViewController.h; sourceTree = "<group>"; };
+		9B5FE94B180DBCAF00A45A5A /* BRTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRTextViewController.m; sourceTree = "<group>"; };
 		9BBFA93D180C7BB7004F510F /* TinyMceOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyMceOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBFA940180C7BB7004F510F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9BBFA942180C7BB7004F510F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,7 @@
 		9BBFA967180C7BB7004F510F /* TinyMceOneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TinyMceOneTests-Info.plist"; sourceTree = "<group>"; };
 		9BBFA969180C7BB7004F510F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BBFA96B180C7BB7004F510F /* TinyMceOneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TinyMceOneTests.m; sourceTree = "<group>"; };
+		9BBFA97A180C97B2004F510F /* content.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +117,14 @@
 		9BBFA946180C7BB7004F510F /* TinyMceOne */ = {
 			isa = PBXGroup;
 			children = (
+				9BBFA97A180C97B2004F510F /* content.html */,
 				9BBFA94F180C7BB7004F510F /* BRAppDelegate.h */,
 				9BBFA950180C7BB7004F510F /* BRAppDelegate.m */,
 				9BBFA952180C7BB7004F510F /* Main.storyboard */,
 				9BBFA955180C7BB7004F510F /* BRViewController.h */,
 				9BBFA956180C7BB7004F510F /* BRViewController.m */,
+				9B5FE94A180DBCAF00A45A5A /* BRTextViewController.h */,
+				9B5FE94B180DBCAF00A45A5A /* BRTextViewController.m */,
 				9BBFA958180C7BB7004F510F /* Images.xcassets */,
 				9BBFA947180C7BB7004F510F /* Supporting Files */,
 			);
@@ -231,6 +239,7 @@
 			files = (
 				9BBFA959180C7BB7004F510F /* Images.xcassets in Resources */,
 				9BBFA94B180C7BB7004F510F /* InfoPlist.strings in Resources */,
+				9BBFA97B180C97B2004F510F /* content.html in Resources */,
 				9BBFA954180C7BB7004F510F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BBFA957180C7BB7004F510F /* BRViewController.m in Sources */,
+				9B5FE94C180DBCAF00A45A5A /* BRTextViewController.m in Sources */,
 				9BBFA951180C7BB7004F510F /* BRAppDelegate.m in Sources */,
 				9BBFA94D180C7BB7004F510F /* main.m in Sources */,
 			);
@@ -461,6 +471,7 @@
 				9BBFA971180C7BB7004F510F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BBFA972180C7BB7004F510F /* Build configuration list for PBXNativeTarget "TinyMceOneTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +480,7 @@
 				9BBFA974180C7BB7004F510F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
