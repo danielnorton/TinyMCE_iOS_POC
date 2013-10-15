@@ -1,0 +1,34 @@
+# from http://gist.github.com/137348
+
+# xcode noise
+*.mode1v3
+*.pbxuser
+*.perspective 
+*.perspectivev3
+*.pyc 
+*~.nib/
+build/
+
+# Textmate - if you build your xcode projects with it
+*.tm_build_errors
+
+# old skool
+.svn
+
+# osx noise
+.DS_Store
+profile
+
+# XCode 4
+xcuserdata
+project.xcworkspace/
+xcuserdata/
+
+# node.js
+node_modules
+.monitor
+
+
+# for Parallels
+.DS_Store
+._.DS_Store
