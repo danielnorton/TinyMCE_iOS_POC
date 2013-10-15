@@ -41,6 +41,16 @@
 
 
 #pragma mark UIWebViewDelegate
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+
+	if (navigationType == UIWebViewNavigationTypeLinkClicked) {
+		
+		[[UIApplication sharedApplication] openURL:request.URL];
+		return NO;
+	}
+	return YES;
+}
+
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
 	
 	NSString *message = [error localizedDescription];
