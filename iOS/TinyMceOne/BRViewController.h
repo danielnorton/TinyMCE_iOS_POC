@@ -6,8 +6,7 @@
 //  Copyright (c) 2013 Daniel Norton. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
-@interface BRViewController : UIViewController
+@interface BRViewController : UIViewController <UIWebViewDelegate>
 
 @end
