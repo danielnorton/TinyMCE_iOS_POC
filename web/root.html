@@ -1,0 +1,30 @@
+<html>
+	<head><!-- CDN hosted by Cachefly -->
+		<script src="../tinymce/js/tinymce/tinymce.min.js"></script>
+		<script language="javascript">
+			function getContent() {
+				
+				return tinyMCE.activeEditor.getContent();
+			}
+		
+			function setContent(content) {
+				
+				tinyMCE.activeEditor.setContent(content);
+			}
+		</script>
+		<script>
+			tinymce.init({
+						 selector:'textarea',
+						 skin: "light",
+						 resize: false,
+						 toolbar1: "bold italic underline | fontsizeselect",
+						 toolbar2: "bullist numlist",
+						 toolbar3: "anchor | forecolor backcolor",
+						 menubar : false
+			});
+			</script>
+	</head>
+	<body>
+        <textarea>Your content here.</textarea>
+	</body>
+</html>
